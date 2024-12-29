@@ -1,0 +1,9 @@
+# # Need to install these libraries:  pip install -r requirements.txt
+pandas
+numpy
+streamlit
+scikit-learn
+wordcloud
+nltk
+kagglehub
+
