@@ -31,7 +31,7 @@ def main():
     
     '''
     # Once we have the dependencies, add a selector for the app mode on the sidebar.
-    st.title('Movie Review Sentiment Analysis')
+    st.title('Twitter Comment Sentiment Analysis')
     st.sidebar.title("What to do")
     app_mode = st.sidebar.selectbox("Choose the app mode",
         ["Introduction", "Run the app", "Show the source code"])
@@ -39,7 +39,7 @@ def main():
         st.sidebar.success('To continue select "Run the app".')
         intro()
     elif app_mode == "Show the source code":
-        st.write('Soure Code: https://github.com/mkhoa/rottentomatoes')
+        st.write('Soure Code: https://github.com/baong28/twitter-comment')
         show_source_code(df)
     elif app_mode == "Run the app":
         run_the_app()
@@ -61,16 +61,16 @@ def load_dataframe():
     df = pickle.load(open('DataFrame.sav', 'rb'))
     return df
 
-# @st.cache_data 
-# def add_stop_word():
-#     '''Add StopWord relate to movie/film manually
+@st.cache_data 
+def add_stop_word():
+    '''Add StopWord relate to 
     
-#     '''
-#     stopword_list = {'movi', 'film', 'one', 'hi', 'thi'}
-#     stopword = stopwords.words('english')
-#     for word in stopword_list:
-#         stopword.append(word)
-#     return stopword
+    '''
+    stopword_list = {'movi', 'film', 'one', 'hi', 'thi'}
+    stopword = stopwords.words('english')
+    for word in stopword_list:
+        stopword.append(word)
+    return stopword
 
 # Most common word
 @st.cache_data 
@@ -122,7 +122,7 @@ def get_file_content_as_string(path):
     '''To read source code from github
     
     '''
-    url = 'https://raw.githubusercontent.com/mkhoa/rottentomatoes/master/' + path
+    url = 'https://raw.githubusercontent.com/baong28/twitter-comment/master/' + path
     response = urllib.request.urlopen(url)
     return response.read().decode("utf-8")
 
@@ -203,18 +203,22 @@ def intro():
     st.image(image)
     st.markdown('''
                 Twitter Sentiment Analysis Dataset:
-                This is an entity-level sentiment analysis dataset of twitter. Given a message and an entity, the task is to judge the sentiment of the message about the entity. There are three classes in this dataset: Positive, Negative and Neutral. We regard messages that are not relevant to the entity (i.e. Irrelevant) as Neutral.
-
-                Usage
-                Please use twitter_training.csv as the training set and twitter_validation.csv as the validation set. 
-                Top 1 classification accuracy is used as the metric.
+                ```
+                This is an entity-level sentiment analysis dataset of twitter. 
+                Given a message and an entity, the task is to judge the sentiment of the message about the entity.
                 
-                This is a multi-class classification problem, which simply means the data set have more than 2 classes(binary classifier). The five classes corresponding to sentiments:
+                ```
+
+                This is a multi-class classification problem, which simply means the data set have more than 2 classes(binary classifier). The three classes corresponding to sentiments:
+
                 ```
                 -1 - Negative
                  0 - Neutral
                  1 - Positive
-                ```
+                ```          
+
+                We regard messages that are not relevant to the entity (i.e. Irrelevant) as Neutral.
+
                 ''')
     st.markdown('## Data Exploration')
     st.markdown('Let us have a look at first few phrases of the training dataset:')
@@ -263,17 +267,18 @@ def show_source_code(df):
     st.write('Model 1 accuracy:',accuracy_score(y_test,prediction))
     st.markdown('**Model 1 Confusion matrix:**')
     cm1 = confusion_matrix(y_test,prediction)
-    sns.heatmap(cm1, annot=True,fmt='g', cmap='Blues', xticklabels=['0', '1', '2', '3', '4'], yticklabels=['0', '1', '2', '3', '4'])
+    fig, ax = plt.subplots()
+    sns.heatmap(cm1, annot=True,fmt='g', cmap='Blues', xticklabels=['-1', '0', '1'], yticklabels=['-1', '0', '1'])
     plt.ylabel('True label')
     plt.xlabel('Predicted label')
-    st.pyplot()
+    st.pyplot(fig)
              
             
 if __name__ == "__main__":
     # Load saved model
     model1 = load_model()
     df = load_dataframe()
-    stopword = stopwords
+    stopword = add_stop_word()
     main()
     
 
