@@ -1,10 +1,10 @@
 # twitter-comment
 
 ## I. Concept: 
-'''
-Twitter Sentiment Analysis Dataset:
-This is an entity-level sentiment analysis dataset of twitter. Given a message and an entity, the task is to judge the sentiment of the message about the entity.
-This is a multi-class classification problem, which simply means the data set have more than 2 classes(binary classifier). The three classes corresponding to sentiments:
+
+### Twitter Sentiment Analysis Dataset:
+#### This is an entity-level sentiment analysis dataset of twitter. Given a message and an entity, the task is to judge the sentiment of the message about the entity.
+#### This is a multi-class classification problem, which simply means the data set have more than 2 classes(binary classifier). The three classes corresponding to sentiments:
 ''' 
 
 ```
@@ -13,11 +13,13 @@ This is a multi-class classification problem, which simply means the data set ha
       1 - Positive
 ```
 
-### We regard messages that are not relevant to the entity (i.e. Irrelevant) as Neutral.
+#### We regard messages that are not relevant to the entity (i.e. Irrelevant) as Neutral.
 
 ## II. User Guide
 
-###  Step 1: Extract file DataFrame file > 25MB, then the file need to be zipped
+###  Step 1: Get data
+
+#### Extract file DataFrame file > 25MB, then the file need to be zipped
 ```
 >> Unzipped file DataFrame.zip --> to get file DataFrame.sav 
 ```
