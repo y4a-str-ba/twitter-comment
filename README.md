@@ -43,11 +43,13 @@ streamlit run app.py
 ```
 
 ## III. Structure
-#### requirements.txt all required libraries
-#### train.py         -- train model with the datasets from Kaggle -- file name 'twitter-training.csv'
-#### test.py          -- test accuracy of model with datasets -- file name 'twitter-validation.csv' --> return 'final_result.csv'
-#### app.py           -- this file is used to run the result on Streamlit
-#### final_result.csv -- testing result of the model, column named 'Sentiment_test' is the predicted result of model and column named 'Sentiment' is true value
-#### DataFrame.zip    -- This is DataFrame.sav, you need to unzip this file (as the User's Guide on Step 1) after clone this repository 
-#### model1.sav       -- Saved train model is stored in the file
-#### twitter-practices.ipynb -- Jupyter Notebook for practicing
+```
+ + requirements.txt  ## all required libraries
+ + train.py          ## train model with the datasets from Kaggle, file name 'twitter-training.csv'
+ + test.py           ## test accuracy of model with datasets, file name 'twitter-validation.csv' => return 'final_result.csv'
+ + app.py            ## this file is used to run the result on Streamlit
+ + final_result.csv  ## testing result of the model, column named 'Sentiment_test' is the predicted result of model and column named 'Sentiment' is true value
+ + DataFrame.zip     ## This is DataFrame.sav, you need to unzip this file (as the User's Guide on Step 1) after clone this repository 
+ + model1.sav        ## Saved train model is stored in the file
+ + twitter-practices.ipynb  ## Jupyter Notebook for practicing
+```
