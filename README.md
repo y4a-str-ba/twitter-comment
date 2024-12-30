@@ -13,7 +13,9 @@
 ## II. User Guide
 
 ###  Step 1: Extract file DataFrame file > 25MB, then the file need to be zipped
-#### >> Unzipped file DataFrame.zip --> to get file DataFrame.sav
+```
+>> Unzipped file DataFrame.zip --> to get file DataFrame.sav 
+```
 
 ###  Step 2: Get virtual environment 
 #### >> python -m venv "venv_name"
