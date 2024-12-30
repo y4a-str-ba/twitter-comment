@@ -1,6 +1,6 @@
 # twitter-comment
 
-## I> Concept: Twitter Sentiment Analysis Dataset:
+## I. Concept: Twitter Sentiment Analysis Dataset:
 ### This is an entity-level sentiment analysis dataset of twitter. Given a message and an entity, the task is to judge the sentiment of the message about the entity.
 ### This is a multi-class classification problem, which simply means the data set have more than 2 classes(binary classifier). The three classes corresponding to sentiments:
 
@@ -10,7 +10,7 @@
 
 ### We regard messages that are not relevant to the entity (i.e. Irrelevant) as Neutral.
 
-## II> User Guide
+## II. User Guide
 
 ###  Step 1: Extract file DataFrame file > 25MB, then the file need to be zipped
 #### >> Unzipped file DataFrame.zip --> to get file DataFrame.sav
@@ -25,7 +25,7 @@
 ###  Step 4: Run the App
 #### >> streamlit run app.py
 
-## III> Structure
+## III. Structure
 #### requirements.txt -- all required libraries for this programme
 #### train.py         -- train model with the datasets from Kaggle -- file name 'twitter-training.csv'
 #### test.py          -- test accuracy of model with datasets -- file name 'twitter-validation.csv' --> return 'final_result.csv'
