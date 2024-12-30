@@ -1,12 +1,17 @@
 # twitter-comment
 
-## I. Concept: Twitter Sentiment Analysis Dataset:
-### This is an entity-level sentiment analysis dataset of twitter. Given a message and an entity, the task is to judge the sentiment of the message about the entity.
-### This is a multi-class classification problem, which simply means the data set have more than 2 classes(binary classifier). The three classes corresponding to sentiments:
+## I. Concept: 
+'''
+Twitter Sentiment Analysis Dataset:
+This is an entity-level sentiment analysis dataset of twitter. Given a message and an entity, the task is to judge the sentiment of the message about the entity.
+This is a multi-class classification problem, which simply means the data set have more than 2 classes(binary classifier). The three classes corresponding to sentiments:
+''' 
 
-#### -1 - Negative
-####  0 - Neutral
-####  1 - Positive
+```
+     -1 - Negative
+      0 - Neutral
+      1 - Positive
+```
 
 ### We regard messages that are not relevant to the entity (i.e. Irrelevant) as Neutral.
 
@@ -18,14 +23,20 @@
 ```
 
 ###  Step 2: Get virtual environment 
-#### >> python -m venv "venv_name"
-#### >> venv_name\Scripts\activate
+```
+ >> python -m venv "venv_name"
+ >> venv_name\Scripts\activate
+```
 
 ###  Step 3: Install required libraries 
-#### >> pip install -r requirements.txt
+```
+>> pip install -r requirements.txt
+```
 
 ###  Step 4: Run the App
-#### >> streamlit run app.py
+```
+>> streamlit run app.py
+```
 
 ## III. Structure
 #### requirements.txt -- all required libraries for this programme
