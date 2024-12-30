@@ -1,11 +1,10 @@
 # twitter-comment
 
-## I. Concept: 
+## I. Concept
 
-### Twitter Sentiment Analysis Dataset:
-#### This is an entity-level sentiment analysis dataset of twitter. Given a message and an entity, the task is to judge the sentiment of the message about the entity.
-#### This is a multi-class classification problem, which simply means the data set have more than 2 classes(binary classifier). The three classes corresponding to sentiments:
-''' 
+###  Twitter Sentiment Analysis Dataset:
+#### This is an entity-level sentiment analysis dataset of social network comments on Twitter. Given a message and an entity, the task is to judge the sentiment of the message about the entity.
+#### This is a multi-class classification problem, which simply means the dataset has more than 2 classes (binary classifier). The three classes corresponding to sentiments:
 
 ```
      -1 - Negative
@@ -19,29 +18,32 @@
 
 ###  Step 1: Get data
 
-#### Extract file DataFrame file > 25MB, then the file need to be zipped
+#### Extract file DataFrame file > 25MB, then the file need to be zipped 
 ```
->> Unzipped file DataFrame.zip --> to get file DataFrame.sav 
+Unzipped file DataFrame.zip --> to get file DataFrame.sav 
 ```
 
-###  Step 2: Get virtual environment 
+###  Step 2: Get a virtual environment
 ```
- >> python -m venv "venv_name"
- >> venv_name\Scripts\activate
+python -m venv "venv_name"
+```
+
+```
+venv_name\Scripts\activate
 ```
 
 ###  Step 3: Install required libraries 
 ```
->> pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ###  Step 4: Run the App
 ```
->> streamlit run app.py
+streamlit run app.py
 ```
 
 ## III. Structure
-#### requirements.txt -- all required libraries for this programme
+#### requirements.txt all required libraries
 #### train.py         -- train model with the datasets from Kaggle -- file name 'twitter-training.csv'
 #### test.py          -- test accuracy of model with datasets -- file name 'twitter-validation.csv' --> return 'final_result.csv'
 #### app.py           -- this file is used to run the result on Streamlit
