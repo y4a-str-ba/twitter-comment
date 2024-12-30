@@ -18,7 +18,7 @@
 
 ###  Step 1: Get data
 
-#### Extract file DataFrame file > 25MB, then the file need to be zipped 
+#### DataFrame file > 25MB, so the file need to be zipped 
 ```
 Unzipped file DataFrame.zip --> to get file DataFrame.sav 
 ```
