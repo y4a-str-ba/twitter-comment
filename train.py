@@ -27,7 +27,7 @@ from collections import Counter
 import streamlit as st
 
 sys.setrecursionlimit(5000)
-script_location = Path('social-network/NLP-Sentiment-Analyzer').absolute()
+script_location = Path('__filepath__').absolute()
 
 # Download latest version
 path = kagglehub.dataset_download("jp797498e/twitter-entity-sentiment-analysis")
