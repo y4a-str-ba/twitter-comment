@@ -25,10 +25,7 @@ def load_data():
 
 def transform_data(df):
     df.rename(columns={0:'Tweet_ID', 1: 'Entity', 2: 'Sentiment', 3: 'Tweet_content'}, inplace=True)
-    df['Sentiment'] = df['Sentiment'].replace('Negative'  , -1)
-    df['Sentiment'] = df['Sentiment'].replace('Irrelevant',  0)
-    df['Sentiment'] = df['Sentiment'].replace('Neutral'   ,  0)
-    df['Sentiment'] = df['Sentiment'].replace('Positive'  ,  1)
+    df['Sentiment'] = df['Sentiment'].map({"Negative": -1, "Irrelevant": 0, "Neutral": 0, "Positive": 1})
     df['Tweet_content'] = df['Tweet_content'].astype(str).fillna('')
     return df
 
