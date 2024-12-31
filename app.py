@@ -23,7 +23,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
 sys.setrecursionlimit(15000)
-script_location = Path('social-network/NLP-Sentiment-Analyzer').absolute()
+script_location = Path('__filepath__').absolute()
 
 # Streamlit encourages well-structured code, like starting execution in a main() function.
 def main():
