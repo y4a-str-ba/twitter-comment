@@ -13,14 +13,7 @@
 ```
 #### We regard messages that are not relevant to the entity (i.e. Irrelevant) as Neutral.
 
-<div align="left">
-      <a href="https://www.youtube.com/embed/x23WUO5E7Xo">
-         <img src="twitter-backgr.png"
-              title="Twitter Comment" 
-              button="Click"
-              style="width:100%;">
-         </a>
-</div>
+[![](twitter-gif.gif)]
 
 ## II. User Guide
 
