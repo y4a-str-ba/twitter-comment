@@ -13,7 +13,7 @@
 ```
 #### We regard messages that are not relevant to the entity (i.e. Irrelevant) as Neutral.
 
-[![Xem video] (twitter-backgr.jpg)](https://www.youtube.com/embed/x23WUO5E7Xo "Twitter Comment - Click to Watch!")
+[![Xem video](twitter-backgr.jpg)](https://www.youtube.com/embed/x23WUO5E7Xo "Twitter Comment - Click to Watch!")
 
 
 ## II. User Guide
