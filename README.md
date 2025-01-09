@@ -16,7 +16,7 @@
 <div align="left">
       <a href="https://www.youtube.com/embed/x23WUO5E7Xo">
          <img src="twitter-backgr.jpg"
-              alt="Everything Is AWESOME" 
+              title="Twitter Comment" 
               style="width:100%;">
          </a>
 </div>
