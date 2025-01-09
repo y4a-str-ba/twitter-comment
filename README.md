@@ -13,7 +13,7 @@
 ```
 #### We regard messages that are not relevant to the entity (i.e. Irrelevant) as Neutral.
 
-[![Xem video]]([https://www.youtube.com/watch?v=x23WUO5E7Xo](https://www.youtube.com/embed/x23WUO5E7Xo?si=s1wfNcL9ygFA3Im-&amp;start=50))
+[![Xem video](https://ibb.co/B4nSbwJ)]([https://www.youtube.com/watch?v=x23WUO5E7Xo](https://www.youtube.com/embed/x23WUO5E7Xo))
 
 
 ## II. User Guide
