@@ -15,6 +15,11 @@
 
 [![Xem video](twitter-backgr.jpg)](https://www.youtube.com/embed/x23WUO5E7Xo "Twitter Comment - Click to Watch!")
 
+<div align="left">
+      <a href="https://www.youtube.com/embed/x23WUO5E7Xo">
+         <img src="twitter-backgr.jpg" style="width:100%;">
+      </a>
+</div>
 
 ## II. User Guide
 
