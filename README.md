@@ -13,7 +13,7 @@
 ```
 #### We regard messages that are not relevant to the entity (i.e. Irrelevant) as Neutral.
 
-[![](twitter-gif.gif)]
+![](twitter-gif.gif)
 
 ## II. User Guide
 
