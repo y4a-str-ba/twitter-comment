@@ -11,8 +11,10 @@
       0 - Neutral
       1 - Positive
 ```
-
 #### We regard messages that are not relevant to the entity (i.e. Irrelevant) as Neutral.
+
+[![Xem video](https://img.youtube.com/vi/_5tFXJQIzi4/0.jpg)]([https://www.youtube.com/watch?v=x23WUO5E7Xo](https://www.youtube.com/embed/x23WUO5E7Xo?si=s1wfNcL9ygFA3Im-&amp;start=50))
+
 
 ## II. User Guide
 
