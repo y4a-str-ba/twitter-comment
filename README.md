@@ -13,6 +13,8 @@
 ```
 #### We regard messages that are not relevant to the entity (i.e. Irrelevant) as Neutral.
 
+### >> Check out the demo video below !! <<
+
 ![](twitter-gif.gif)
 
 ## II. User Guide
