@@ -15,7 +15,7 @@
 
 <div align="left">
       <a href="https://www.youtube.com/embed/x23WUO5E7Xo">
-         <img src="twitter-backgr.jpg"
+         <img src="twitter-backgr.png"
               title="Twitter Comment" 
               button="Click"
               style="width:100%;">
