@@ -4,6 +4,8 @@ import pandas as pd
 import re
 import pickle
 import nltk
+nltk.download('stopwords')
+
 import seaborn as sns
 import matplotlib.pyplot as plt
 import wordcloud as wordcloud
