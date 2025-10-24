@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 import re
 import pickle
+import zipfile
 import nltk
 nltk.download('stopwords')
 
@@ -56,12 +57,33 @@ def load_model():
     return model1
 
 @st.cache_resource
-def load_dataframe():
-    '''Load DataFrame to make basic data analyzing
+# def load_dataframe():
+#     '''Load DataFrame to make basic data analyzing
     
-    '''
-    df = pickle.load(open('DataFrame.sav', 'rb'))
-    return df
+#     '''
+#     df = pickle.load(open('DataFrame.sav', 'rb'))
+#     return df
+
+def load_dataframe():
+    """Load DataFrame từ file .zip, tự động tìm file .sav"""
+    zip_path = 'DataFrame.zip'
+    extract_path = script_location / "DataFrame"
+
+    os.makedirs(extract_path, exist_ok=True)
+
+    with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+        zip_ref.extractall(extract_path)
+
+    # Tìm file .sav trong thư mục giải nén
+    for root, _, files in os.walk(extract_path):
+        for file in files:
+            if file.endswith('.sav'):
+                sav_path = os.path.join(root, file)
+                with open(sav_path, 'rb') as f:
+                    df = pickle.load(f)
+                return df
+
+    raise FileNotFoundError("Không tìm thấy file .sav trong file zip!")
 
 @st.cache_data 
 def add_stop_word():
